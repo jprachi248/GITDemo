@@ -25,6 +25,11 @@ public class Basics {
 				+ "}").when().post("/maps/api/place/add/json")
 		.then().assertThat().log().all().statusCode(200).body("scope",equalTo("APP"))
 		.header("Server","Apache/2.4.41 (Ubuntu)");
+		system.out.println("GIT1");
+		system.out.println("GIT1");
+
+		system.out.println("GIT1");
+
 
 		//add place>update place with new add >> Get address to validate if new address is present in response
 		
